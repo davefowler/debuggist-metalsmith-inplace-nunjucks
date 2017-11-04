@@ -1,0 +1,18 @@
+---
+title: "A test post"
+date: "11-3-2017"
+layout: "base.html"
+fruits:
+    - Apple
+    - Orange
+    - Strawberry
+    - Mango
+---
+
+<p>Here are some fruits</p>
+
+<ul>
+  {% for fruit in fruits %}
+   <li>{{ fruit }}</li>
+  {% endfor %}
+</ul>
